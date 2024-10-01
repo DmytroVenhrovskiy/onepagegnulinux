@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNU/Linux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Linux</div>
+            <ul class="nav-links">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#distributions">About</a></li>
+                <li><a href="#commands">Commands</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Операційна система <span>GNU/Linux</span></h1>
+            <p>Це потужні інструменти для керування змінами у файлах.</p>
+            <div class="buttons">
+                <a href="https://pages.github.com" class="btn-primary">GitHub Pages</a>
+                <a href="https://github.com/DmytroVenhrovskiy" class="btn-secondary">Author</a>
+            </div>
+        </div>
+        <div class="certificate">
+            <img src="certificate.png" alt="Сертифікат">
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <h2>Коротка інформація про GNU/Linux</h2>
+        <p>GNU/Linux — це операційна система з відкритим кодом, яку можна безкоштовно використовувати та змінювати. Вона базується на ядрі Linux, розробленому Лінусом Торвальдсом у 1991 році. Зараз існує велика кількість дистрибутивів GNU/Linux для різних цілей.</p>
+    </section>
+
+    <section id="distributions" class="content-section">
+        <h2>Найбільш популярні дистрибутиви</h2>
+        <ul>
+            <li>Ubuntu</li>
+            <li>Debian</li>
+            <li>Fedora</li>
+            <li>Arch Linux</li>
+            <li>Linux Mint</li>
+            <li>CentOS</li>
+        </ul>
+    </section>
+
+    <section id="commands" class="content-section">
+        <h2>Команди для роботи з Linux CLI</h2>
+        <ul>
+            <li><strong>pwd</strong> – вивести поточну директорію</li>
+            <li><strong>echo</strong> – вивести повідомлення</li>
+            <li><strong>ls</strong> – вивести вміст директорії</li>
+            <li><strong>cd</strong> – змінити директорію</li>
+            <li><strong>touch</strong> – створити файл</li>
+            <li><strong>mkdir</strong> – створити директорію</li>
+            <li><strong>cp</strong> – копіювати файли</li>
+            <li><strong>mv</strong> – перемістити або перейменувати файл</li>
+            <li><strong>rm</strong> – видалити файл або директорію</li>
+            <li><strong>history</strong> – вивести історію команд</li>
+        </ul>
+    </section>
+
+    <section id="bash-script" class="content-section">
+        <h2>BASH-скрипт авторизації</h2>
+        <pre><code>
+#!/bin/bash
+echo "Введіть ім'я користувача:"
+read username
+echo "Введіть пароль:"
+read -s password
+
+if [ "$username" == "admin" ] && [ "$password" == "1234" ]; then
+    echo "Авторизація успішна!"
+else
+    echo "Невірні дані!"
+fi
+        </code></pre>
+    </section>
+
+    <section id="resources" class="content-section">
+        <h2>Джерела інформації</h2>
+        <ul>
+            <li><a href="https://www.kernel.org" target="_blank">Офіційний сайт ядра Linux</a></li>
+            <li><a href="https://ubuntu.com" target="_blank">Офіційний сайт Ubuntu</a></li>
+            <li><a href="https://www.debian.org" target="_blank">Офіційний сайт Debian</a></li>
+            <li><a href="https://www.linux.org" target="_blank">Linux.org</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Веб-сторінка про GNU/Linux</p>
+    </footer>
+</body>
+</html>
